@@ -7,7 +7,7 @@ app.use(express.json())
 const comment=require("./moduls/comment")
 const username="walid__1st"
 const pass="1234567812345678"
-mongoose.connect("mongodb+srv://walid__1st:1234567812345678@cluster0.kavrnnl.mongodb.net/contactApp?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("mongodb+srv://walid__1st:1234567812345678@cluster0.kavrnnl.mongodb.net/contactFoyer?retryWrites=true&w=majority&appName=Cluster0")
 .then(()=>{
     console.log("connected")
     app.listen(3000,()=>{
