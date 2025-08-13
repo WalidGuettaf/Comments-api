@@ -26,6 +26,7 @@ app.post("/comment", async (req, res) => {
             email: req.body.email
         });
         await newcomment.save();
+        console.log("new comment!")
         res.status(201).json({ message: "Comment saved successfully!" });
     } catch (err) {
         console.error(err);
