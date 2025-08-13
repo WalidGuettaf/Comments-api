@@ -35,5 +35,5 @@ app.post("/comment", async (req, res) => {
 });
 app.get("/comments",async(req,res)=>{
     const comments=await comment.find()
-    res.status(200).json(comments)
+    res.json(comments)
 })
